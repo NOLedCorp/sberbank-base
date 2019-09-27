@@ -187,8 +187,6 @@ export class AppComponent {
         dataSource: this.getPivotData(),
         expandAll: false,
         enableSorting: true,
-        //showFieldList: true,
-        //showGroupingBar: true,
         columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
         values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
         rows: [{ name: 'Country' }, { name: 'Products' }],
