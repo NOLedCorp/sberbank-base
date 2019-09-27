@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~8.2.7",
     "@angular/platform-browser-dynamic": "~8.2.7",
     "@angular/router": "~8.2.7",
+    "@syncfusion/ej2-angular-base": "^17.2.49",
+    "@syncfusion/ej2-angular-pivotview": "^17.2.47",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
