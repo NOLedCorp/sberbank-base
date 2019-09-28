@@ -3,9 +3,11 @@
       relational report.</p>
 </div>
 <div class="control-section" style="overflow:auto;">
-  <ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings 
+  <ejs-pivotview #pivotview id='PivotView'
+  [dataSourceSettings]=dataSourceSettings 
   showFieldList='true'
   showGroupingBar='true'
-      [gridSettings]='gridSettings'>
+  allowCalculatedField='true'
+  [gridSettings]='gridSettings'>
   </ejs-pivotview>
 </div>
