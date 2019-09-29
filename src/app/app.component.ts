@@ -5,9 +5,6 @@ import { enableRipple } from '@syncfusion/ej2-base';
 import { HttpClient } from '@angular/common/http';
 enableRipple(false);
 
-declare var require: any;
-let Pivot_Data: IDataSet[] = require('./datasource.ts');
-
 @Component({
   selector: 'app-root',
   providers: [GroupingBarService, FieldListService, CalculatedFieldService],
@@ -20,6 +17,7 @@ export class AppComponent {
   public editSettings: CellEditSettings;
   public dataSourceSettings: IDataOptions;
   public gridSettings: GridSettings;
+  
   data:IDataSet[] = [];
 
   constructor(private _http: HttpClient){}
@@ -58,7 +56,5 @@ export class AppComponent {
       } as GridSettings;
 
       this.getPivotData();
-
-      
     }
 }
