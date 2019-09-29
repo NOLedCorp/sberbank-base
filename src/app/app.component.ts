@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet, GroupingBarService, FieldListService, CalculatedFieldService, CellEditSettings } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
-import { Pivot_Data } from './datasource';
 enableRipple(false);
-// declare var require: any;
-// let Pivot_Data: IDataSet[] = require('./datasource.ts');
+
+declare var require: any;
+let Pivot_Data: IDataSet[] = require('./datasource.ts');
 
 @Component({
   selector: 'app-root',
@@ -186,6 +186,8 @@ export class AppComponent {
       this.gridSettings = {
           columnWidth: 140
       } as GridSettings;
+
+      console.log(Pivot_Data);
 
       this.dataSourceSettings = {
         //dataSource: this.getPivotData(),
