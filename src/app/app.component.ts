@@ -37,10 +37,10 @@ export class AppComponent {
           //calculatedFieldSettings: [{ name: 'Total', formula: "Sum(Amount)"+"Sum(Sold)"}]
           };
           
-          this.editSettings = {
-            allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch', allowCommandColumns: false,
-            allowEditOnDblClick: true, showConfirmDialog: true, showDeleteConfirmDialog: false
-        } as CellEditSettings;
+        //   this.editSettings = {
+        //     allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch', allowCommandColumns: false,
+        //     allowEditOnDblClick: true, showConfirmDialog: true, showDeleteConfirmDialog: false
+        // } as CellEditSettings;
           this.editSettings = {
             allowAdding: true,
             allowDeleting: true,
