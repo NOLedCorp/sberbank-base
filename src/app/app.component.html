@@ -1,4 +1,4 @@
-<div id="action-description">
+<!-- <div id="action-description">
   <p>This sample demonstrates basic rendering of the pivot table with drill-up and drill-down functionality bound to a
       relational report.</p>
 </div>
@@ -11,4 +11,10 @@
   [editSettings]='editSettings'
   [gridSettings]='gridSettings'>
   </ejs-pivotview>
-</div>
+</div> -->
+<wbr-pivot *ngIf="report" #pivot1 [toolbar]="true"
+          [width]="'100%'"
+          [height]="500"
+          [report]="report">
+    WebDataRocks will appear here
+</wbr-pivot>

@@ -20,6 +20,8 @@ export class AppComponent {
   
   data:IDataSet[] = [];
 
+  report: any;
+
   constructor(private _http: HttpClient){}
 
   getPivotData(): void {
@@ -47,6 +49,12 @@ export class AppComponent {
             allowEditing: true,
             mode: 'Batch'
           } as CellEditSettings;
+
+          this.report = {
+            dataSource: {
+              data: this.data
+            }
+          }
       })
   }
 
