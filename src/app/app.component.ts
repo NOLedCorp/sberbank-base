@@ -1,9 +1,10 @@
-import { Component, OnInit, ViewChild, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewChecked, AfterViewInit } from '@angular/core';
 import { IDataOptions, IDataSet, GroupingBarService, FieldListService, CalculatedFieldService, CellEditSettings } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { HttpClient } from '@angular/common/http';
 import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
+import { columnSelectionComplete } from '@syncfusion/ej2-grids';
 enableRipple(false);
 
 @Component({
@@ -12,7 +13,7 @@ enableRipple(false);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent implements OnInit, AfterViewChecked {
+export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   title = 'sberbank-base';
   @ViewChild("pivot1", {static : false}) pivot1:WebDataRocksPivot
   public editSettings: CellEditSettings;
@@ -22,6 +23,9 @@ export class AppComponent implements OnInit, AfterViewChecked {
   data:any;
   obj:any;
   report: any;
+
+  popUpContainer: HTMLDivElement = null;
+
 
   constructor(private _http: HttpClient){}
 
@@ -145,16 +149,42 @@ export class AppComponent implements OnInit, AfterViewChecked {
       this.getPivotData();
       
     }
-    ngAfterViewChecked(){
-      //console.log(this.pivot1);
-
-      let cells = document.querySelectorAll(".wdr-cell");
-      for(let i = 0; i<cells.length;i++){
-        (<HTMLElement>cells[i]).onclick = function(event){
-          console.dir(event.target)
+  ngAfterViewChecked(){
+    //console.log(this.pivot1);
+    if(!this.popUpContainer){
+      this.popUpContainer = document.querySelector("#wdr-drillthrough-view");
+      if(!this.popUpContainer){
+        return;
+      }
+      this.popUpContainer.onchange = function(event){
+        console.log(event)
+      }
+    }else{
+      if(this.popUpContainer.style.display != 'none'){
+        let headers = this.popUpContainer.querySelectorAll(".wdr-grid-container .wdr-header:not(.wdr-empty)");
+        let allCells = this.popUpContainer.querySelectorAll(".wdr-grid-container .wdr-cell:not(.wdr-total):not(.wdr-header):not(.wdr-sheet-header):not(.wdr-empty)");
+        let cells = [];
+        for(let i = 0; i<allCells.length;i++){
+          let j = Math.floor(i/headers.length);
+          if(!cells[j]) cells[j]=[];
+          cells[j].push({header: headers[i%headers.length].innerHTML, value: allCells[i].innerHTML});
+          (<HTMLElement>allCells[i]).onclick = function(event){
+            console.dir(event.target)
+          }
         }
+        console.log(cells)
+      }else{
+        return;
       }
     }
+    
+    
+    
+    
+  }
+  ngAfterViewInit(){
+    
+  }
   onCellClick(event){
     //console.log(this.pivot1.webDataRocks.getSelectedCell());
   }

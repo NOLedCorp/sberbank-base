@@ -17,7 +17,8 @@
           [height]="500"
           [report]="report"
           [customizeCell]="customizeCellFunction"
-          (celldoubleclick)="onCellClick($event)">
+          (celldoubleclick)="onCellClick($event)"
+          (update)="getCell">
     WebDataRocks will appear here
 </wbr-pivot>
 <button (click)="getCell()">Get cell</button>
