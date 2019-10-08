@@ -5,6 +5,7 @@ import { enableRipple } from '@syncfusion/ej2-base';
 import { HttpClient } from '@angular/common/http';
 import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
 import { columnSelectionComplete } from '@syncfusion/ej2-grids';
+import { CellContent } from './models';
 enableRipple(false);
 
 @Component({
@@ -25,7 +26,7 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   report: any;
 
   popUpContainer: HTMLDivElement = null;
-
+  private _currentCells = null;
 
   constructor(private _http: HttpClient){}
 
@@ -96,7 +97,6 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
               {
                 name: "Amount",
                 decimalPlaces: 0,
-                currencySymbol: "$",
                 currencySymbolAlign: "right"
               }
             ],
@@ -150,24 +150,31 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
       
     }
   ngAfterViewChecked(){
-    //console.log(this.pivot1);
     if(!this.popUpContainer){
       this.popUpContainer = document.querySelector("#wdr-drillthrough-view");
       if(!this.popUpContainer){
         return;
       }
-      this.popUpContainer.onchange = function(event){
-        console.log(event)
-      }
     }else{
       if(this.popUpContainer.style.display != 'none'){
-        let headers = this.popUpContainer.querySelectorAll(".wdr-grid-container .wdr-header:not(.wdr-empty)");
+        let draggs = this.popUpContainer.querySelectorAll(".wdr-draggable");
+        console.log(draggs)
+        if(draggs.length){
+          for(let i = 0; i<draggs.length;i++){
+            (<HTMLElement>draggs[i]).classList.remove("wdr-draggable");
+            (<HTMLElement>draggs[i]).classList.remove("wdr-draggable");
+            ondragstart
+          }
+        }
+        
+        
+        let headers = this.pivot1.webDataRocks.getAllHierarchies();
         let allCells = this.popUpContainer.querySelectorAll(".wdr-grid-container .wdr-cell:not(.wdr-total):not(.wdr-header):not(.wdr-sheet-header):not(.wdr-empty)");
         let cells = [];
         for(let i = 0; i<allCells.length;i++){
           let j = Math.floor(i/headers.length);
-          if(!cells[j]) cells[j]=[];
-          cells[j].push({header: headers[i%headers.length].innerHTML, value: allCells[i].innerHTML});
+          if(!cells[j]) cells[j]={};
+          cells[j][headers[i%headers.length].uniqueName] =  allCells[i].innerHTML;
           (<HTMLElement>allCells[i]).onclick = function(event){
             console.dir(event.target)
           }
