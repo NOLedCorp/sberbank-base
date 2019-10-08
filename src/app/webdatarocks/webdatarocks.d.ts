@@ -2,7 +2,7 @@
     WebDataRocks(params: WebDataRocks.Params): WebDataRocks.Pivot;
 }
 
-export declare namespace WebDataRocks {
+export namespace WebDataRocks {
     interface Params {
         // params
         toolbar?: boolean;
