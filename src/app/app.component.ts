@@ -4,8 +4,6 @@ import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/grid
 import { enableRipple } from '@syncfusion/ej2-base';
 import { HttpClient } from '@angular/common/http';
 import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
-import { columnSelectionComplete } from '@syncfusion/ej2-grids';
-import { CellContent } from './models';
 enableRipple(false);
 
 @Component({
@@ -25,8 +23,10 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   obj:any;
   report: any;
 
+  cells = null;
   popUpContainer: HTMLDivElement = null;
   private _currentCells = null;
+  private _tableData = null;
 
   constructor(private _http: HttpClient){}
 
@@ -68,15 +68,15 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
 
         this.report = {
           dataSource: {
-            data: this.data
+            data: this.readyData(this.data)
           },
           formats:[
-            {
-              name: "Amount",
-              decimalPlaces: 0,
-              currencySymbol: "$",
-              currencySymbolAlign: "right"
-            }
+            // {
+            //   name: "Amount",
+            //   decimalPlaces: 0,
+            //   currencySymbol: "$",
+            //   currencySymbolAlign: "right"
+            // }
           ],
           slice: {
             rows: [
@@ -99,6 +99,10 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
                 uniqueName: "Quarter",
                 caption: "Квартал"
               },
+              {
+                uniqueName: "Product",
+                caption: "Продукт"
+              }
               // {
               //   uniqueName: "Measures"
               // }
@@ -112,7 +116,7 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
                 uniqueName: "Amount",
                 caption: "Стоимость",
                 aggregation: "sum",
-                format: "Amount"
+                // format: "Amount"
               },
             ]
           }
@@ -122,8 +126,23 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
 
   ngOnInit(): void {
       this.getPivotData();
-      //console.log()
     }
+
+  readyData(data){
+    this._tableData = [];
+    data.forEach(row => {
+      let r = {};
+      Object.keys(row).forEach(key => {
+        if( typeof row[key] == 'object'){
+          r[key] = row[key].Caption;
+        }else{
+          r[key] = row[key];
+        }
+      })
+      this._tableData.push(r);
+    })
+    return this._tableData;
+  }
   ngAfterViewChecked(){
     if(!this.popUpContainer){
       this.popUpContainer = document.querySelector("#wdr-drillthrough-view");
@@ -132,29 +151,22 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
       }
     }else{
       if(this.popUpContainer.style.display != 'none'){
-        let draggs = this.popUpContainer.querySelectorAll(".wdr-draggable");
-        console.log(draggs)
-        if(draggs.length){
-          for(let i = 0; i<draggs.length;i++){
-            (<HTMLElement>draggs[i]).classList.remove("wdr-draggable");
-            (<HTMLElement>draggs[i]).classList.remove("wdr-draggable");
-            ondragstart
-          }
-        }
-        
+        let btn = (<HTMLElement>this.popUpContainer.querySelector(".wdr-fields-view-wrap"));
+        btn.style.display = "none"
         
         let headers = this.pivot1.webDataRocks.getAllHierarchies();
+        let headersHTML = this.popUpContainer.querySelectorAll(".wdr-header:not(.wdr-empty)");
         let allCells = this.popUpContainer.querySelectorAll(".wdr-grid-container .wdr-cell:not(.wdr-total):not(.wdr-header):not(.wdr-sheet-header):not(.wdr-empty)");
-        let cells = [];
+        this.cells = [];
         for(let i = 0; i<allCells.length;i++){
-          let j = Math.floor(i/headers.length);
-          if(!cells[j]) cells[j]={};
-          cells[j][headers[i%headers.length].uniqueName] =  allCells[i].innerHTML;
+          let j = Math.floor(i/headersHTML.length);
+          if(!this.cells[j]) this.cells[j]={};
+          this.cells[j][headers.find(x => x.caption == headersHTML[i%headersHTML.length].innerHTML).uniqueName] =  allCells[i].innerHTML;
+          let vm = this;
           (<HTMLElement>allCells[i]).onclick = function(event){
-            console.dir(event.target)
+            vm.onCellClick(event.target);
           }
         }
-        console.log(cells)
       }else{
         return;
       }
@@ -168,23 +180,22 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
     
   }
   onCellClick(event){
-    console.log(event.member);
+    
+    let row = this.cells[event.dataset.r-1];
+    let index = this._tableData.findIndex(x => {
+      let res = true;
+      for(let key of Object.keys(x)){
+        if(/^[\d\s]+$/.test(row[key]) && typeof row[key] == 'string'){
+          row[key] = parseInt(row[key].replace(/\D+/g,""));
+        }
+        if(x[key]!=row[key]){
+          res = false;
+          break;
+        }
+      }
+      return res;
+    })
+    console.log(  this.data[index])
   }
-  customizeCellFunction(cellBuilder, cellData) {
-    //console.log([cellBuilder, cellData])
-  }
-  // cons(event){
-  //   console.log(event)
-  // }
-
-  getCell(){
-    console.log(this.pivot1.webDataRocks)
-    console.log(this.pivot1.webDataRocks.getReport())
-    this.pivot1.webDataRocks.on('reportchange', 'onReportChange');
-  }
-
-  onReportChange(result) {
-      alert('The report has been changed!');
-  }  
 
 }
