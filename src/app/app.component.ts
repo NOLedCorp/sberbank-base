@@ -33,121 +33,96 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   getPivotData(): void {
       this._http.get<any>("../../assets/data.json").subscribe(data => {
         this.data = data;
-        // this.dataSourceSettings = {
-        //   dataSource: this.data,
-        //   expandAll: false,
-        //   enableSorting: true,
-        //   columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-        //   values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-        //   rows: [{ name: 'Country' }, { name: 'Products' }],
-        //   formatSettings: [{ name: 'Amount', format: 'C0' }],
-        //   filters: [],
-        //   //calculatedFieldSettings: [{ name: 'Total', formula: "Sum(Amount)"+"Sum(Sold)"}]
-        //   };
-          
-        //   this.editSettings = {
-        //     allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch', allowCommandColumns: false,
-        //     allowEditOnDblClick: true, showConfirmDialog: true, showDeleteConfirmDialog: false
-        // } as CellEditSettings;
-          // this.editSettings = {
-          //   allowAdding: true,
-          //   allowDeleting: true,
-          //   allowEditing: true,
-          //   mode: 'Batch'
-          // } as CellEditSettings;
+      //   this.obj = [{
+      //     "Country": {
+      //       type: "level",
+      //       hierarchy: "Countries"
+      //     },
+      //     "Product": {
+      //       type: "level",
+      //       hierarchy: "Countries",
+      //       level: "Products",
+      //       parent: "Country"
+      //     },
+      //     "Year": {
+      //       type: "level",
+      //       hierarchy: "Years"
+      //     },
+      //     "Quarter": {
+      //       type: "level",
+      //       hierarchy: "Years",
+      //       level: "Quarters",
+      //       parent: "Year"
+      //     },
+      //     "Sold": {
+      //       type: "number",
+      //       caption: "Количество"
+      //     },
+      //     "Amount": {
+      //       type: "number",
+      //       caption: "Сумма"
+      //     },
+      //   },
+      //   ...this.data
+      // ]
 
-        //   this.obj = [{
-        //     "Country": {
-        //       type: "level",
-        //       hierarchy: "Countries"
-        //     },
-        //     "Product": {
-        //       type: "level",
-        //       hierarchy: "Countries",
-        //       level: "Products",
-        //       parent: "Country"
-        //     },
-        //     "Year": {
-        //       type: "level",
-        //       hierarchy: "Years"
-        //     },
-        //     "Quarter": {
-        //       type: "level",
-        //       hierarchy: "Years",
-        //       level: "Quarters",
-        //       parent: "Year"
-        //     },
-        //     "Sold": {
-        //       type: "number",
-        //       caption: "Количество"
-        //     },
-        //     "Amount": {
-        //       type: "number",
-        //       caption: "Сумма"
-        //     },
-        //   },
-        //   ...this.data
-        // ]
-
-          this.report = {
-            dataSource: {
-              data: this.data
-            },
-            formats:[
+        this.report = {
+          dataSource: {
+            data: this.data
+          },
+          formats:[
+            {
+              name: "Amount",
+              decimalPlaces: 0,
+              currencySymbol: "$",
+              currencySymbolAlign: "right"
+            }
+          ],
+          slice: {
+            rows: [
+              {
+                uniqueName: "Country",
+                caption: "Страна"
+              },
               {
                 name: "Amount",
                 decimalPlaces: 0,
                 currencySymbolAlign: "right"
               }
             ],
-            slice: {
-              rows: [
-                {
-                  uniqueName: "Country",
-                  caption: "Страна"
-                },
-                {
-                  uniqueName: "Product",
-                  caption: "Продукт"
-                },
-              ],
-              columns: [
-                {
-                  uniqueName: "Year",
-                  caption: "Год"
-                },
-                {
-                  uniqueName: "Quarter",
-                  caption: "Квартал"
-                },
-                // {
-                //   uniqueName: "Measures"
-                // }
-              ],
-              measures: [
-                {
-                  uniqueName: "Sold",
-                  caption: "Количество"
-                },
-                {
-                  uniqueName: "Amount",
-                  caption: "Стоимость",
-                  aggregation: "sum",
-                  format: "Amount"
-                },
-              ]
-            }
+            columns: [
+              {
+                uniqueName: "Year",
+                caption: "Год"
+              },
+              {
+                uniqueName: "Quarter",
+                caption: "Квартал"
+              },
+              // {
+              //   uniqueName: "Measures"
+              // }
+            ],
+            measures: [
+              {
+                uniqueName: "Sold",
+                caption: "Количество"
+              },
+              {
+                uniqueName: "Amount",
+                caption: "Стоимость",
+                aggregation: "sum",
+                format: "Amount"
+              },
+            ]
           }
-      })
-  }
+        }
+    })
+}
 
   ngOnInit(): void {
-      // this.gridSettings = {
-      //     columnWidth: 140
-      // } as GridSettings;
-    
       this.getPivotData();
-      
+      //console.log()
     }
   ngAfterViewChecked(){
     if(!this.popUpContainer){
@@ -193,7 +168,7 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
     
   }
   onCellClick(event){
-    //console.log(this.pivot1.webDataRocks.getSelectedCell());
+    console.log(event.member);
   }
   customizeCellFunction(cellBuilder, cellData) {
     //console.log([cellBuilder, cellData])
