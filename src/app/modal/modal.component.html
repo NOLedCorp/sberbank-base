@@ -1,0 +1,9 @@
+<div class="modal" [class.show]="ms.show">
+    <div class="modal-contentt">
+        <div class="header">{{ms.header}} <i class="fas fa-power-off" (click)="ms.close()"></i> </div>
+        <div class="body" >
+            <div #body></div>
+        </div>
+    </div>
+    <div class="modal-background" (mousedown)="ms.close()"></div>
+</div>

@@ -1,0 +1,9 @@
+<div *ngFor="let p of objects">
+    <div *ngIf="!p.object; else link">
+        <span>{{p.name}}</span> - <span>{{p.value}}</span>
+    </div>
+    
+    <ng-template #link>
+        <a href="#"><span>{{p.name}}</span> - <span>{{p.value}}</span></a>
+    </ng-template>
+</div>

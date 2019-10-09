@@ -4,6 +4,8 @@ import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/grid
 import { enableRipple } from '@syncfusion/ej2-base';
 import { HttpClient } from '@angular/common/http';
 import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
+import { ModalService } from './sevices/modal.service';
+import { UpdateComponent } from './update/update.component';
 enableRipple(false);
 
 @Component({
@@ -28,7 +30,7 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   private _currentCells = null;
   private _tableData = null;
 
-  constructor(private _http: HttpClient){}
+  constructor(private _http: HttpClient, private ms:ModalService){}
 
   getPivotData(): void {
       this._http.get<any>("../../assets/data.json").subscribe(data => {
@@ -179,6 +181,10 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   ngAfterViewInit(){
     
   }
+  updateData(data){
+    this.ms.open(UpdateComponent, 'Изменение данных', {data: data});
+  }
+
   onCellClick(event){
     
     let row = this.cells[event.dataset.r-1];
@@ -195,7 +201,16 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
       }
       return res;
     })
-    console.log(  this.data[index])
+    let headers = this.pivot1.webDataRocks.getAllHierarchies();
+    let headersHTML = this.popUpContainer.querySelectorAll(".wdr-header:not(.wdr-empty)");
+    let collumnName = headers.find(x => x.caption == headersHTML[event.dataset.c].innerHTML).uniqueName;
+    if(typeof this.data[index][collumnName] == 'object'){
+      this.updateData(this.data[index][collumnName]);
+    }else{
+      let res = {};
+      res[collumnName]=this.data[index][collumnName];
+      this.updateData(res);
+    }
   }
 
 }

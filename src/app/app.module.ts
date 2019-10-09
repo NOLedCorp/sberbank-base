@@ -5,12 +5,16 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 import { AppComponent }  from './app.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
+import { ModalComponent } from './modal/modal.component';
+import { UpdateComponent } from './update/update.component';
+import { ModalService } from './sevices/modal.service';
 
 @NgModule({
   //declaration of ej2-angular-pivotview module into NgModule
   imports:      [ BrowserModule, PivotViewAllModule, PivotFieldListAllModule, HttpClientModule ],
-  declarations: [ AppComponent, WebDataRocksPivot ],
+  declarations: [ AppComponent, WebDataRocksPivot, ModalComponent, UpdateComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [HttpClient]
+  providers: [HttpClient, ModalService],
+  entryComponents: [UpdateComponent]
 })
 export class AppModule { }
