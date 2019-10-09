@@ -4,7 +4,7 @@ import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/grid
 import { enableRipple } from '@syncfusion/ej2-base';
 import { HttpClient } from '@angular/common/http';
 import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
-import { ModalService } from './sevices/modal.service';
+import { ModalService } from './services/modal.service';
 import { UpdateComponent } from './update/update.component';
 enableRipple(false);
 
@@ -34,96 +34,96 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
 
   getPivotData(): void {
       this._http.get<any>("../../assets/data.json").subscribe(data => {
-        this.data = data;
-      //   this.obj = [{
-      //     "Country": {
-      //       type: "level",
-      //       hierarchy: "Countries"
-      //     },
-      //     "Product": {
-      //       type: "level",
-      //       hierarchy: "Countries",
-      //       level: "Products",
-      //       parent: "Country"
-      //     },
-      //     "Year": {
-      //       type: "level",
-      //       hierarchy: "Years"
-      //     },
-      //     "Quarter": {
-      //       type: "level",
-      //       hierarchy: "Years",
-      //       level: "Quarters",
-      //       parent: "Year"
-      //     },
-      //     "Sold": {
-      //       type: "number",
-      //       caption: "Количество"
-      //     },
-      //     "Amount": {
-      //       type: "number",
-      //       caption: "Сумма"
-      //     },
-      //   },
-      //   ...this.data
-      // ]
+      this.data = data;
+    //   this.obj = [{
+    //     "Country": {
+    //       type: "level",
+    //       hierarchy: "Countries"
+    //     },
+    //     "Product": {
+    //       type: "level",
+    //       hierarchy: "Countries",
+    //       level: "Products",
+    //       parent: "Country"
+    //     },
+    //     "Year": {
+    //       type: "level",
+    //       hierarchy: "Years"
+    //     },
+    //     "Quarter": {
+    //       type: "level",
+    //       hierarchy: "Years",
+    //       level: "Quarters",
+    //       parent: "Year"
+    //     },
+    //     "Sold": {
+    //       type: "number",
+    //       caption: "Количество"
+    //     },
+    //     "Amount": {
+    //       type: "number",
+    //       caption: "Сумма"
+    //     },
+    //   },
+    //   ...this.data
+    // ]
 
-        this.report = {
-          dataSource: {
-            data: this.readyData(this.data)
+    this.report = {
+      dataSource: {
+        data: this.readyData(this.data)
+      },
+      formats:[
+        // {
+        //   name: "Amount",
+        //   decimalPlaces: 0,
+        //   currencySymbol: "$",
+        //   currencySymbolAlign: "right"
+        // }
+      ],
+      slice: {
+        rows: [
+          {
+            uniqueName: "Country",
+            caption: "Страна"
           },
-          formats:[
-            // {
-            //   name: "Amount",
-            //   decimalPlaces: 0,
-            //   currencySymbol: "$",
-            //   currencySymbolAlign: "right"
-            // }
-          ],
-          slice: {
-            rows: [
-              {
-                uniqueName: "Country",
-                caption: "Страна"
-              },
-              {
-                name: "Amount",
-                decimalPlaces: 0,
-                currencySymbolAlign: "right"
-              }
-            ],
-            columns: [
-              {
-                uniqueName: "Year",
-                caption: "Год"
-              },
-              {
-                uniqueName: "Quarter",
-                caption: "Квартал"
-              },
-              {
-                uniqueName: "Product",
-                caption: "Продукт"
-              }
-              // {
-              //   uniqueName: "Measures"
-              // }
-            ],
-            measures: [
-              {
-                uniqueName: "Sold",
-                caption: "Количество"
-              },
-              {
-                uniqueName: "Amount",
-                caption: "Стоимость",
-                aggregation: "sum",
-                // format: "Amount"
-              },
-            ]
+          {
+            name: "Amount",
+            decimalPlaces: 0,
+            currencySymbolAlign: "right"
           }
-        }
-    })
+        ],
+        columns: [
+          {
+            uniqueName: "Year",
+            caption: "Год"
+          },
+          {
+            uniqueName: "Quarter",
+            caption: "Квартал"
+          },
+          {
+            uniqueName: "Product",
+            caption: "Продукт"
+          }
+          // {
+          //   uniqueName: "Measures"
+          // }
+        ],
+        measures: [
+          {
+            uniqueName: "Sold",
+            caption: "Количество"
+          },
+          {
+            uniqueName: "Amount",
+            caption: "Стоимость",
+            aggregation: "sum",
+            // format: "Amount"
+          },
+        ]
+      }
+    }
+  })
 }
 
   ngOnInit(): void {
@@ -145,6 +145,7 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
     })
     return this._tableData;
   }
+
   ngAfterViewChecked(){
     if(!this.popUpContainer){
       this.popUpContainer = document.querySelector("#wdr-drillthrough-view");
@@ -173,20 +174,17 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
         return;
       }
     }
-    
-    
-    
-    
   }
+
   ngAfterViewInit(){
     
   }
+
   updateData(data){
     this.ms.open(UpdateComponent, 'Изменение данных', {data: data});
   }
 
   onCellClick(event){
-    
     let row = this.cells[event.dataset.r-1];
     let index = this._tableData.findIndex(x => {
       let res = true;
@@ -212,5 +210,4 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
       this.updateData(res);
     }
   }
-
 }

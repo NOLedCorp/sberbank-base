@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, ViewContainerRef, AfterViewInit } from '@angular/core';
-import { ModalService } from '../sevices/modal.service';
+import { ModalService } from '../services/modal.service';
 
 @Component({
   selector: 'sberbank-modal',

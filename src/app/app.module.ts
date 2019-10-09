@@ -7,7 +7,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
 import { ModalComponent } from './modal/modal.component';
 import { UpdateComponent } from './update/update.component';
-import { ModalService } from './sevices/modal.service';
+import { ModalService } from './services/modal.service';
 
 @NgModule({
   //declaration of ej2-angular-pivotview module into NgModule

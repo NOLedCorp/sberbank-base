@@ -31,7 +31,6 @@ export class UpdateComponent implements OnInit {
       }else{
         return {name: k, value: this.data[k].Caption, object: this.data[k]}
       }
-      
     })
   }
 }
