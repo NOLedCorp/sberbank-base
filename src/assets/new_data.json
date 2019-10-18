@@ -11,12 +11,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -31,7 +31,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -49,12 +49,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -81,12 +81,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -102,7 +102,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -118,7 +118,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -133,7 +133,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -170,12 +170,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -190,7 +190,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -208,12 +208,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -240,12 +240,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -261,7 +261,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -277,7 +277,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -292,7 +292,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -329,12 +329,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -349,7 +349,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -367,12 +367,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -399,12 +399,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -420,7 +420,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -436,7 +436,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -451,7 +451,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -488,12 +488,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -508,7 +508,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -526,12 +526,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -558,12 +558,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -579,7 +579,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -595,7 +595,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -610,7 +610,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -647,12 +647,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -667,7 +667,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -685,12 +685,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -717,12 +717,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -738,7 +738,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -754,7 +754,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -769,7 +769,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -806,12 +806,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -826,7 +826,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -844,12 +844,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -876,12 +876,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -897,7 +897,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -913,7 +913,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -928,7 +928,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -965,12 +965,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -985,7 +985,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1003,12 +1003,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -1035,12 +1035,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1056,7 +1056,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1072,7 +1072,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -1087,7 +1087,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -1124,12 +1124,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -1144,7 +1144,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1162,12 +1162,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -1194,12 +1194,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1215,7 +1215,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1231,7 +1231,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -1246,7 +1246,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -1283,12 +1283,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1303,7 +1303,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -1321,12 +1321,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -1353,12 +1353,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1374,7 +1374,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1390,7 +1390,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1405,7 +1405,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -1442,12 +1442,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1462,7 +1462,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -1480,12 +1480,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -1512,12 +1512,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1533,7 +1533,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -1549,7 +1549,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -1564,7 +1564,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -1601,12 +1601,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1621,7 +1621,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1639,12 +1639,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -1671,12 +1671,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1692,7 +1692,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1708,7 +1708,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -1723,7 +1723,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -1760,12 +1760,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1780,7 +1780,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1798,12 +1798,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -1830,12 +1830,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1851,7 +1851,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -1867,7 +1867,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -1882,7 +1882,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -1919,12 +1919,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1939,7 +1939,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -1957,12 +1957,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -1989,12 +1989,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2010,7 +2010,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2026,7 +2026,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2041,7 +2041,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -2078,12 +2078,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -2098,7 +2098,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -2116,12 +2116,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -2148,12 +2148,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2169,7 +2169,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2185,7 +2185,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2200,7 +2200,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -2237,12 +2237,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -2257,7 +2257,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -2275,12 +2275,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -2307,12 +2307,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2328,7 +2328,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2344,7 +2344,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2359,7 +2359,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -2396,12 +2396,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -2416,7 +2416,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -2434,12 +2434,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -2466,12 +2466,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2487,7 +2487,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2503,7 +2503,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2518,7 +2518,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -2555,12 +2555,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -2575,7 +2575,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -2593,12 +2593,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -2625,12 +2625,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2646,7 +2646,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2662,7 +2662,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2677,7 +2677,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -2714,12 +2714,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -2734,7 +2734,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -2752,12 +2752,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -2784,12 +2784,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2805,7 +2805,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2821,7 +2821,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2836,7 +2836,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -2873,12 +2873,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -2893,7 +2893,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -2911,12 +2911,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -2943,12 +2943,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -2964,7 +2964,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2980,7 +2980,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -2995,7 +2995,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -3032,12 +3032,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -3052,7 +3052,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -3070,12 +3070,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -3102,12 +3102,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3123,7 +3123,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -3139,7 +3139,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -3154,7 +3154,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -3191,12 +3191,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -3211,7 +3211,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -3229,12 +3229,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -3261,12 +3261,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3282,7 +3282,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -3298,7 +3298,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3313,7 +3313,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -3350,12 +3350,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -3370,7 +3370,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -3388,12 +3388,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -3420,12 +3420,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3441,7 +3441,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -3457,7 +3457,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3472,7 +3472,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -3509,12 +3509,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -3529,7 +3529,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -3547,12 +3547,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -3579,12 +3579,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3600,7 +3600,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3616,7 +3616,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3631,7 +3631,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -3668,12 +3668,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -3688,7 +3688,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -3706,12 +3706,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -3738,12 +3738,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3759,7 +3759,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3775,7 +3775,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -3790,7 +3790,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -3827,12 +3827,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -3847,7 +3847,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -3865,12 +3865,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -3897,12 +3897,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3918,7 +3918,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -3934,7 +3934,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -3949,7 +3949,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -3986,12 +3986,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -4006,7 +4006,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -4024,12 +4024,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -4056,12 +4056,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4077,7 +4077,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4093,7 +4093,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4108,7 +4108,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -4145,12 +4145,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -4165,7 +4165,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -4183,12 +4183,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -4215,12 +4215,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4236,7 +4236,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4252,7 +4252,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4267,7 +4267,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -4304,12 +4304,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -4324,7 +4324,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -4342,12 +4342,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -4374,12 +4374,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4395,7 +4395,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4411,7 +4411,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -4426,7 +4426,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -4463,12 +4463,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -4483,7 +4483,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -4501,12 +4501,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -4533,12 +4533,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4554,7 +4554,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -4570,7 +4570,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4585,7 +4585,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -4622,12 +4622,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -4642,7 +4642,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -4660,12 +4660,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -4692,12 +4692,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4713,7 +4713,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -4729,7 +4729,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -4744,7 +4744,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -4781,12 +4781,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -4801,7 +4801,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -4819,12 +4819,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -4851,12 +4851,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4872,7 +4872,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4888,7 +4888,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -4903,7 +4903,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -4940,12 +4940,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -4960,7 +4960,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -4978,12 +4978,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -5010,12 +5010,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5031,7 +5031,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5047,7 +5047,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5062,7 +5062,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -5099,12 +5099,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -5119,7 +5119,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -5137,12 +5137,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -5169,12 +5169,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5190,7 +5190,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5206,7 +5206,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -5221,7 +5221,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -5258,12 +5258,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -5278,7 +5278,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -5296,12 +5296,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -5328,12 +5328,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5349,7 +5349,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -5365,7 +5365,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5380,7 +5380,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -5417,12 +5417,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -5437,7 +5437,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -5455,12 +5455,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -5487,12 +5487,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5508,7 +5508,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -5524,7 +5524,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5539,7 +5539,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -5576,12 +5576,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -5596,7 +5596,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -5614,12 +5614,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -5646,12 +5646,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5667,7 +5667,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5683,7 +5683,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -5698,7 +5698,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -5735,12 +5735,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -5755,7 +5755,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -5773,12 +5773,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -5805,12 +5805,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5826,7 +5826,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -5842,7 +5842,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -5857,7 +5857,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -5894,12 +5894,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -5914,7 +5914,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -5932,12 +5932,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -5964,12 +5964,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -5985,7 +5985,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6001,7 +6001,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6016,7 +6016,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -6053,12 +6053,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6073,7 +6073,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6091,12 +6091,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -6123,12 +6123,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6144,7 +6144,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -6160,7 +6160,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6175,7 +6175,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -6212,12 +6212,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6232,7 +6232,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6250,12 +6250,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -6282,12 +6282,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6303,7 +6303,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -6319,7 +6319,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -6334,7 +6334,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -6371,12 +6371,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -6391,7 +6391,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -6409,12 +6409,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -6441,12 +6441,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6462,7 +6462,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -6478,7 +6478,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -6493,7 +6493,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -6530,12 +6530,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6550,7 +6550,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6568,12 +6568,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -6600,12 +6600,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6621,7 +6621,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -6637,7 +6637,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6652,7 +6652,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -6689,12 +6689,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -6709,7 +6709,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6727,12 +6727,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -6759,12 +6759,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6780,7 +6780,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6796,7 +6796,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6811,7 +6811,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -6848,12 +6848,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -6868,7 +6868,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -6886,12 +6886,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -6918,12 +6918,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6939,7 +6939,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -6955,7 +6955,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -6970,7 +6970,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -7007,12 +7007,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -7027,7 +7027,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7045,12 +7045,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -7077,12 +7077,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7098,7 +7098,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -7114,7 +7114,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7129,7 +7129,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -7166,12 +7166,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -7186,7 +7186,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7204,12 +7204,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -7236,12 +7236,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7257,7 +7257,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7273,7 +7273,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7288,7 +7288,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
@@ -7325,12 +7325,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7345,7 +7345,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7363,12 +7363,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -7395,12 +7395,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7416,7 +7416,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -7432,7 +7432,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -7447,7 +7447,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -7484,12 +7484,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7504,7 +7504,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7522,12 +7522,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -7554,12 +7554,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7575,7 +7575,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7591,7 +7591,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -7606,7 +7606,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -7643,12 +7643,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7663,7 +7663,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -7681,12 +7681,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -7713,12 +7713,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7734,7 +7734,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -7750,7 +7750,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7765,7 +7765,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -7802,12 +7802,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -7822,7 +7822,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7840,12 +7840,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -7872,12 +7872,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7893,7 +7893,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -7909,7 +7909,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -7924,7 +7924,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -7961,12 +7961,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Value"
@@ -7981,7 +7981,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -7999,12 +7999,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -8031,12 +8031,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -8052,7 +8052,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -8068,7 +8068,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Name"
@@ -8083,7 +8083,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Q1",
@@ -8120,12 +8120,12 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Aim",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -8140,7 +8140,7 @@
             {
               "Name": "Value",
               "Type": "number",
-              "Reqired": true
+              "Required": true
             }
           ],
           "ShowFieldName": "Value"
@@ -8158,12 +8158,12 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": true
+              "Required": true
             },
             {
               "Name": "BusinessUnitId",
               "Type": "select",
-              "Reqired": false,
+              "Required": false,
               "Options": [
                 {
                   "Name": "Спорт",
@@ -8190,12 +8190,12 @@
             {
               "Name": "Import",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             },
             {
               "Name": "Export",
               "Type": "checkbox",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -8211,7 +8211,7 @@
             {
               "Name": "Value",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -8227,7 +8227,7 @@
             {
               "Name": "Name",
               "Type": "text",
-              "Reqired": false
+              "Required": false
             }
           ],
           "ShowFieldName": "Name"
@@ -8242,7 +8242,7 @@
             {
               "Name": "Value",
               "Type": "select",
-              "Reqired": true,
+              "Required": true,
               "Options": [
                 {
                   "Name": "Q1",
