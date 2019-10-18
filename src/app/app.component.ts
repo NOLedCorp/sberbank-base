@@ -25,9 +25,9 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   obj:any;
   report: any;
 
-  cells = null;
-  popUpContainer: HTMLDivElement = null;
-  private _currentCells = null;
+  drilledThrought: boolean = false;
+  dCells = [];
+  dHeaders = [];
   private _tableData = null;
 
   constructor(private _http: HttpClient, private ms:ModalService){}
@@ -124,11 +124,13 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
       }
     }
   })
+
 }
 
   ngOnInit(): void {
       this.getPivotData();
-    }
+      document['vm'] = this;
+  }
 
   readyData(data){
     this._tableData = [];
@@ -147,33 +149,6 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
   }
 
   ngAfterViewChecked(){
-    if(!this.popUpContainer){
-      this.popUpContainer = document.querySelector("#wdr-drillthrough-view");
-      if(!this.popUpContainer){
-        return;
-      }
-    }else{
-      if(this.popUpContainer.style.display != 'none'){
-        let btn = (<HTMLElement>this.popUpContainer.querySelector(".wdr-fields-view-wrap"));
-        btn.style.display = "none"
-        
-        let headers = this.pivot1.webDataRocks.getAllHierarchies();
-        let headersHTML = this.popUpContainer.querySelectorAll(".wdr-header:not(.wdr-empty)");
-        let allCells = this.popUpContainer.querySelectorAll(".wdr-grid-container .wdr-cell:not(.wdr-total):not(.wdr-header):not(.wdr-sheet-header):not(.wdr-empty)");
-        this.cells = [];
-        for(let i = 0; i<allCells.length;i++){
-          let j = Math.floor(i/headersHTML.length);
-          if(!this.cells[j]) this.cells[j]={};
-          this.cells[j][headers.find(x => x.caption == headersHTML[i%headersHTML.length].innerHTML).uniqueName] =  allCells[i].innerHTML;
-          let vm = this;
-          (<HTMLElement>allCells[i]).onclick = function(event){
-            vm.onCellClick(event.target);
-          }
-        }
-      }else{
-        return;
-      }
-    }
   }
 
   ngAfterViewInit(){
@@ -184,30 +159,75 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
     this.ms.open(UpdateComponent, 'Изменение данных', {data: data});
   }
 
-  onCellClick(event){
-    let row = this.cells[event.dataset.r-1];
-    let index = this._tableData.findIndex(x => {
-      let res = true;
-      for(let key of Object.keys(x)){
-        if(/^[\d\s]+$/.test(row[key]) && typeof row[key] == 'string'){
-          row[key] = parseInt(row[key].replace(/\D+/g,""));
+  show(){
+    console.log([this.dHeaders, this.dCells])
+  }
+
+  customizeCellFunction(cellBuilder, cellData) {
+    let vm = document['vm'];
+    if(!cellData.isDrillThrough){
+      vm.dCells = [];
+      vm.dHeaders = [];
+      vm.drilledThrought = false;
+    }else{
+      vm.drilledThrought = true;
+      if(cellData.type == 'header'){
+        
+        vm.dHeaders[cellData.columnIndex]= cellData.label;
+      }else{
+        cellBuilder.attr['onclick'] = 'document.vm.onCellClick(this)';
+        if(!vm.dCells[cellData.rowIndex]){
+          vm.dCells[cellData.rowIndex] = [];
         }
-        if(x[key]!=row[key]){
-          res = false;
-          break;
+        
+        vm.dCells[cellData.rowIndex][cellData.columnIndex] = {
+          hierarchy: {
+            uniqueName: cellData.hierarchy.uniqueName,
+            caption: cellData.hierarchy.caption
+          },
+          value: !cellData.value? cellData.label : cellData.value,
+          row: cellData.rowIndex,
+          column: cellData.columnIndex
+        };
+      }
+    }
+  }
+
+  onCellClick(event){
+    let row = this.mapRow(this.dCells[event.dataset.r]);
+    let column = this.dCells[event.dataset.r][event.dataset.c].hierarchy.uniqueName;
+    let dataset = this.data.find(r => {
+      let res = true;
+      for(let key in row){
+        if(typeof r[key] == 'object'){
+          if(r[key].Caption != row[key]){
+            res = false;
+            break;
+          }
+        }else{
+          if(r[key] != row[key]){
+            res = false;
+            break;
+          }
         }
       }
       return res;
     })
-    let headers = this.pivot1.webDataRocks.getAllHierarchies();
-    let headersHTML = this.popUpContainer.querySelectorAll(".wdr-header:not(.wdr-empty)");
-    let collumnName = headers.find(x => x.caption == headersHTML[event.dataset.c].innerHTML).uniqueName;
-    if(typeof this.data[index][collumnName] == 'object'){
-      this.updateData(this.data[index][collumnName]);
+
+    if(typeof dataset[column] == 'object'){
+      this.updateData(dataset[column]);
     }else{
       let res = {};
-      res[collumnName]=this.data[index][collumnName];
+      res[column]=dataset[column];
       this.updateData(res);
     }
+  }
+
+  mapRow(row: Array<any>){
+    let res = {};
+    row.forEach(c => {
+      res[c.hierarchy.uniqueName] = c.value;
+    })
+    return res;
   }
 }

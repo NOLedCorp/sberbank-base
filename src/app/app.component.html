@@ -2,6 +2,8 @@
 <wbr-pivot *ngIf="report" #pivot1 [toolbar]="false"
           [width]="'100%'"
           [height]="500"
+          [customizeCell] = "customizeCellFunction"
           [report]="report">
     WebDataRocks will appear here
 </wbr-pivot>
+<div class="btn btn-default" (click)="show()">Show cells</div>
