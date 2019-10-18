@@ -1,0 +1,168 @@
+[
+    '{{repeat(5, 7)}}',
+    {
+      Id: '{{objectId()}}',
+      Sold: {
+        Data: {
+          Value: '{{integer(20, 1000)}}',
+          Aim:  '{{integer(20, 1000)}}'
+        },
+        Config: {
+          Fields: [
+            {
+              Name: 'Value',
+              Type: 'number',
+              Reqired: '{{bool()}}'
+            },
+            {
+              Name: 'Aim',
+              Type: 'number',
+              Reqired: '{{bool()}}'
+            }
+          ],
+          
+          ShowFieldName: 'Value'
+        }
+      }, 
+      Amount: {
+        Data: {
+          Value: '{{integer(20, 10000)}}'
+        },
+        Config: {
+          Fields: [
+            {
+              Name: 'Value',
+              Type: 'number',
+              Reqired: '{{bool()}}'
+            }
+          ],
+          ShowFieldName: 'Value'
+          
+        }
+      }, 
+      Country: {
+        Data: {
+          Name: '{{random("France", "Russia", "Spain", "UK", "USA", "Germany", "Italy")}}',
+          BusinessUnitId: '{{random(1, 2, 3, 4, 5)}}',
+          Import: '{{bool()}}',
+          Export: '{{bool()}}'
+        },
+        Config: {
+          Fields: [
+            {
+              Name: 'Name',
+              Type: 'text',
+              Reqired: '{{bool()}}'
+            },
+            {
+              Name: 'BusinessUnitId',
+              Type: 'select',
+              Reqired: '{{bool()}}',
+              Options: [
+                {
+                  Name: "Спорт",
+                  Id: 1
+                },
+                {
+                  Name: "Туризм",
+                  Id: 2
+                },
+                {
+                  Name: "Гурный туризм",
+                  Id: 3
+                },
+                {
+                  Name: "BMX",
+                  Id: 4
+                },
+                {
+                  Name: "Детский",
+                  Id: 5
+                }
+              ]
+            },
+            {
+              Name: 'Import',
+              Type: 'checkbox',
+              Reqired: false
+            },
+            {
+              Name: 'Export',
+              Type: 'checkbox',
+              Reqired: false
+            }
+          ],
+          ShowFieldName: 'Name'
+        }
+      },
+     Product:  {
+        Data: {
+          Name: '{{random("Bikes", "Clothes", "Boots", "Computer games")}}',
+          Rating: '{{integer(1,10)}}'
+        },
+        Config: {
+          Fields: [
+            {
+              Name: 'Value',
+              Type: 'text',
+              Reqired: '{{bool()}}'
+            }
+          ],
+          ShowFieldName: 'Name'
+          
+        }
+      }, 
+     Year: {
+        Data: {
+          Name: '{{"FA "+random(2015, 2016, 2017, 2018, 2019)}}',
+          PlanDescription: '{{lorem(100, "words")}}'
+        },
+        Config: {
+          Fields: [
+            {
+              Name: 'Name',
+              Type: 'text',
+              Reqired: '{{bool()}}'
+            }
+          ],
+          ShowFieldName: 'Name'
+          
+        }
+      },
+      Quarter: {
+        Data: {
+          Value: '{{random("Q1", "Q2","Q3","Q4")}}'
+        },
+        Config: {
+          Fields: [
+            {
+              Name: 'Value',
+              Type: 'select',
+              Reqired: '{{bool()}}',
+              Options: [
+                {
+                  Name: 'Q1',
+                  Id: 'Q1'
+                },
+                {
+                  Name: 'Q2',
+                  Id: 'Q2'
+                },
+                {
+                  Name: 'Q3',
+                  Id: 'Q3'
+                },
+                {
+                  Name: 'Q4',
+                  Id: 'Q4'
+                }
+              ]
+            }
+          ],
+          ShowFieldName: 'Value'
+          
+        }
+      }
+    }
+    
+  ]
