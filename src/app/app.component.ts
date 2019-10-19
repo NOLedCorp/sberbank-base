@@ -90,6 +90,10 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
             name: "Amount",
             decimalPlaces: 0,
             currencySymbolAlign: "right"
+          },
+          {
+            uniqueName: "Product",
+            caption: "Продукт"
           }
         ],
         columns: [
@@ -101,10 +105,6 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
             uniqueName: "Quarter",
             caption: "Квартал"
           },
-          {
-            uniqueName: "Product",
-            caption: "Продукт"
-          }
           // {
           //   uniqueName: "Measures"
           // }
@@ -166,7 +166,7 @@ export class AppComponent implements OnInit, AfterViewChecked, AfterViewInit {
           if(!this.cells[j]) this.cells[j]={};
           this.cells[j][headers.find(x => x.caption == headersHTML[i%headersHTML.length].innerHTML).uniqueName] =  allCells[i].innerHTML;
           let vm = this;
-          (<HTMLElement>allCells[i]).onclick = function(event){
+          (<HTMLElement>allCells[i]).ondblclick = function(event){
             vm.onCellClick(event.target);
           }
         }

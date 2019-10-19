@@ -1,8 +1,16 @@
-<div *ngFor="let p of objects">
+<!-- <div *ngFor="let p of objects">
     <div *ngIf="!p.object; else link">
         <span>{{p.name}}</span> - <span>{{p.value}}</span>
     </div>
     <ng-template #link>
         <a href="#"><span>{{p.name}}</span> - <span>{{p.value}}</span></a>
     </ng-template>
-</div>
+</div> -->
+
+<form [formGroup]="addForm" class="p-5">
+    <div *ngFor="let controlName of getControls()" class="form-group">
+        <label>{{controlName}}</label>
+        <input [formControlName]="controlName" class="form-control">
+    </div>
+    <button [disabled]="addForm.invalid" class="btn btn-primary" *ngIf="upd_length" (click)="updateData()">Сохранить</button>
+</form>

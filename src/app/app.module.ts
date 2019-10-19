@@ -8,10 +8,16 @@ import { WebDataRocksPivot } from './webdatarocks/webdatarocks.angular4';
 import { ModalComponent } from './modal/modal.component';
 import { UpdateComponent } from './update/update.component';
 import { ModalService } from './services/modal.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   //declaration of ej2-angular-pivotview module into NgModule
-  imports:      [ BrowserModule, PivotViewAllModule, PivotFieldListAllModule, HttpClientModule ],
+  imports:      [ BrowserModule, 
+    PivotViewAllModule, 
+    PivotFieldListAllModule, 
+    HttpClientModule, 
+    FormsModule,
+    ReactiveFormsModule],
   declarations: [ AppComponent, WebDataRocksPivot, ModalComponent, UpdateComponent ],
   bootstrap:    [ AppComponent ],
   providers: [HttpClient, ModalService],
